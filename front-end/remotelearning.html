@@ -1,0 +1,91 @@
+<html>
+    <head>
+        
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script> 
+        <link rel="stylesheet" href="subpage.css">
+        <script>
+            $(function(){ 
+              $("#header").load("header.html");  
+            }); 
+        </script>
+
+        <script>
+            function moveTo(str) {
+              location.replace(str)
+            }
+        </script>
+
+
+
+    </head>
+    <body>
+
+        <div id="header"></div> 
+        <br>
+
+    
+        <!----NAVIGATION BAR--->
+        <div class="navigation">
+
+            <div class="drop">
+                <button class="dropbtn">Undergraduate
+                <!--<i class="fa fa-caret-down"></i>-->  
+                </button>
+                <div class="drop-content">
+                    <button class = "content-btn" onclick="moveTo('undergradoverview.html')">Overview</button> 
+                  <!--<button class = "content-btn" onclick="changeContent('overview')">Overview</button>-->
+                  <button class = "content-btn" onclick="moveTo('remotelearning.html')">Remote Learning</button>
+                </div>
+            </div>
+
+            <div class="drop">
+                <button class="dropbtn">Graduate
+
+                </button>
+                <div class="drop-content">
+                    <button class = "content-btn" onclick="moveTo('gradoverview.html')">Overview</button>
+                    <button class = "content-btn">Applying</button>
+                </div>
+            </div>
+
+            <div class="drop">
+                <button class="dropbtn">Courses
+
+                </button>
+                <div class="drop-content">
+                    <button class = "content-btn">Overview</button>
+                    <button class = "content-btn">Applying</button>
+                </div>
+            </div>
+
+        </div>
+
+        <!----CONTENT--->
+        <div class="content" id="content">
+            <div class="heading">Remote Learning</div>
+            <br>
+            <div class="paragraph">
+                Most academic activities are proceeding remotely in the fall semester. Below is a list of resources and links to information about adapting to remote learning.<br><br>
+                <ul>
+                    <li>SOCS's update on remote teaching</li>
+                    <li>McGill's remote student life portal</li>
+                    <li>Strategies for studying and learning at home</li>
+                    <li>Seven Tips for Learning at Home</li>
+                    <li>McGill's response to the COVID-19 pandemic</li>
+                    <li>The Faculty of Science's information page</li>
+                    <li>Immigration FAQ for international students related to COVID-19</li>
+                </ul>
+                <br>
+                The School welcomes your feedback on our courses during the COVID-19 disruption. Please contact your instructor first. If you wish you comments to be confidential, then email Prof. Michael Langer (michael.langer@mcgill.ca) or the School's Director Prof. Bettina Kemme (bettina.kemme@mcgill.ca) and use your McGill address.
+            </div>
+        </div>
+
+        
+        <div class="foot">
+            <p style="margin: 0;">All content related requests should be sent to webadmin@cs.mcgill.ca</p>
+            <p>© McGill University 2020 Credits</p>
+        </div>
+
+    </body>
+</html>
+
